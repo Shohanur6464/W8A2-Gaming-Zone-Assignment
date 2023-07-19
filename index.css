@@ -126,7 +126,7 @@ body {
     font-weight: 600;
     background-color: var(--primary-color);
     border-radius: 20px;
-    padding: 0 auto;
+    padding: 10px 0px;
     border: none;
     cursor: pointer;
 }
@@ -160,9 +160,39 @@ body {
     padding-left: 20px;
     height: 100%;
 }
+/* gamer style */
 
-
-
+.gamer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.gamer-right{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    gap: 10px;
+}
+.gamer-title{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamer-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+.gamer-motto{
+    text-align: right;
+}
 
 @media screen and (max-width: 576px) {
     nav {
@@ -217,9 +247,28 @@ body {
         padding-right: 20px;
         
     }
+    .gamer {
+        flex-direction: column;
+    }
+    .gamer img {
+        width: 100%;
+    }
+    .gamer-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .gamer-description {
+        text-align: center;
+    }
+    .gamer-motto {
+        text-align: center;
+    }
 
 }
-@media screen and (min-width: 576px) and (max-width: 960px){
+@media screen (max-width: 960px){
     .banner {
         flex-direction: column-reverse;
         align-items: center;
@@ -248,5 +297,24 @@ body {
          
         padding-right: 20px;
         
+    }
+    .gamer {
+        flex-direction: column;
+    }
+    .gamer img {
+        width: 100%;
+    }
+    .gamer-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .gamer-description {
+        text-align: center;
+    }
+    .gamer-motto {
+        text-align: center;
     }
 }
