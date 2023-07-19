@@ -1,46 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-:root{
+
+
+
+:root {
     --primary-color: #ff42a5;
 }
-*{
+
+* {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
-    height: 150px;
-    /* border: 2px solid red; */
+    width: 100%;
+    height: 120px;
+    padding: 0 50px;
+  
+    
 }
-.nav-left{
+
+.nav-left {
     display: flex;
-    margin: 45px 40px;
+    
     gap: 20px;
+    align-items: center;
 }
-.gamer-title{
+
+.gamer-title {
     text-align: center;
     font-size: 45px;
     font-weight: 700;
 }
-.g{
+
+.g {
     color: var(--primary-color);
 }
-.nav-right, .follow{
-    display: flex;
+
+.nav-right
+ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.follow{
+
+.follow {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     background-color: rgba(11, 2, 35, 0.10);
-    margin: 45px 40px;
+    display: flex;
     padding: 20px;
+    height: 55px;
+
     gap: 10px;
-    
+
 }
-.list{
+
+.list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,4 +72,181 @@ nav{
     padding: 51px 20px;
     gap: 20px;
 
+}
+
+body {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-left {
+    background-image: url(/images/Group\ 14.png);
+    width: 50vw;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: cover;
+    padding: 100px;
+}
+.banner-left-content {
+    height: 100%;
+}
+
+.banner-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.goat {
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-1 {
+    width: 120px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-2 {
+    width: 120px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    background: #4EC5F7;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.banner-right {
+    width: 50vw;
+
+    height: 80vh;
+}
+
+.banner-right img {
+    width: 100%;
+    padding-left: 20px;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .nav-right {
+        flex-direction: column;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-left {
+        
+        width: 100%;
+        
+        padding: 100px;
+    }
+    .banner-title {
+         
+        font-size: 25px;
+       
+        
+    }
+    .goat {
+        font-size: 2rem;
+         
+    }
+    .banner-right img {
+        width: 100%;
+        padding-left: 20px;
+       
+    }
+
+    .banner-right {
+        width: 100vw;
+        margin-bottom: 20px;
+       
+    }
+    .banner-left {
+        width: 100vw;   
+        padding: 50px;
+    }
+    .banner-right img {
+         
+        padding-right: 20px;
+        
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 960px){
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .goat {
+        font-size: 55px;
+         
+    }
+    .banner-right img {
+        width: 100%;
+        padding-left: 20px;
+       
+    }
+
+    .banner-right {
+        width: 100vw;
+        margin-bottom: 20px;
+       
+    }
+    .banner-left {
+        width: 100vw;   
+        padding: 100px;
+    }
+    .banner-right img {
+         
+        padding-right: 20px;
+        
+    }
 }
